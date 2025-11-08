@@ -35,26 +35,4 @@ El proyecto combina una estética *cyberpunk* con animaciones suaves, un sistema
 
 ---
 
-📁 Estructura básica
-
-src/
-├── components/
-│   ├── Navbar.jsx
-│   ├── SearchBar.jsx
-│   ├── Games.jsx
-│   ├── Footer.jsx
-│   └── ...
-├── assets/
-│   └── images/
-├── App.jsx
-└── main.jsx
-
-
-💜 Créditos
-
-Desarrollado con pasión por CyberRonin ⚔️
-
-“El futuro del gaming empieza en el código.” ⚡
-
-<p align="center"> <img src="https://img.shields.io/badge/Made%20with%20💻%20and%20💜-CyberRonin-ec4899?style=for-the-badge"/> </p> ``
 
