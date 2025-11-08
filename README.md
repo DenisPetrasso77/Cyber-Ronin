@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+🕹️ CyberRonin Games Store
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bienvenido a CyberRonin, una tienda de videojuegos moderna y futurista desarrollada con React, TailwindCSS y Framer Motion.
+El proyecto combina una estética cyberpunk con animaciones suaves, un sistema de búsqueda interactivo y componentes totalmente responsivos.
 
-## Available Scripts
+🚀 Características
 
-In the project directory, you can run:
+🎮 Catálogo dinámico de juegos con imágenes, descripciones y animaciones.
 
-### `npm start`
+🔍 Buscador en tiempo real para filtrar juegos por nombre.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+💫 Diseño moderno y responsivo, con efectos neón y gradientes oscuros.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+⚙️ Componentes reutilizables, organizados por secciones (Home, Games, Footer, etc.).
 
-### `npm test`
+🧩 Animaciones fluidas gracias a Framer Motion.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+🛠️ Tecnologías utilizadas
 
-### `npm run build`
+⚛️ React
+ — Librería principal para la interfaz.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+💨 TailwindCSS
+ — Estilos rápidos, modernos y personalizables.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🎬 Framer Motion
+ — Animaciones declarativas y suaves.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+⚙️ Instalación y ejecución
+# Clonar el repositorio
+git clone https://github.com/tuusuario/cyberronin-games.git
 
-### `npm run eject`
+# Entrar al proyecto
+cd cyberronin-games
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Instalar dependencias
+npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Iniciar el servidor de desarrollo
+npm run dev
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+El proyecto estará disponible en
+👉 http://localhost:5173
 
-## Learn More
+📁 Estructura básica
+src/
+├── components/
+│   ├── Navbar.jsx
+│   ├── SearchBar.jsx
+│   ├── Games.jsx
+│   ├── Footer.jsx
+│   └── ...
+├── assets/
+│   └── images/
+├── App.jsx
+└── main.jsx
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+💜 Créditos
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Desarrollado con pasión por CyberRonin.
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+“El futuro del gaming empieza en el código.” ⚡
