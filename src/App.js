@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { AnimatePresence } from "framer-motion";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -8,6 +8,7 @@ import Cart from "./components/Cart";
 import Footer from "./components/Footer";
 import ContactModal from "./components/ContactModal";
 import SuccessMessage from "./components/SuccessMessage";
+import SearchBar from "./components/SearchBar";
 import "./index.css";
 
 function App() {
@@ -17,12 +18,25 @@ function App() {
   const [showContact, setShowContact] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
 
+  const [query, setQuery] = useState("");
+
   useEffect(() => {
     fetch("/data/games.json")
       .then((res) => res.json())
       .then((data) => setJuegos(data))
       .catch((err) => console.error("Error al cargar los juegos:", err));
   }, []);
+
+  // Filtrado memoizado: usa g.title y g.desc (si cambian los nombres, adaptá)
+  const filteredJuegos = useMemo(() => {
+    if (!query || !query.trim()) return juegos;
+    const q = query.trim().toLowerCase();
+    return juegos.filter((g) => {
+      const title = (g.title || "").toString().toLowerCase();
+      const desc = (g.desc || "").toString().toLowerCase();
+      return title.includes(q) || desc.includes(q);
+    });
+  }, [juegos, query]);
 
   const addToCart = (game) => {
     if (!cart.find((item) => item.title === game.title)) setCart([...cart, game]);
@@ -52,7 +66,13 @@ function App() {
 
       <Navbar cartCount={cart.length} />
       <Hero />
-      <Games juegos={juegos} onSelect={setJuegoSeleccionado} />
+
+      {/* SearchBar */}
+      <SearchBar query={query} setQuery={setQuery} total={filteredJuegos.length} />
+
+      {/* Games recibe los juegos filtrados */}
+      <Games juegos={filteredJuegos} onSelect={setJuegoSeleccionado} />
+
       <AnimatePresence>
         {juegoSeleccionado && (
           <GameDetail
@@ -62,10 +82,14 @@ function App() {
           />
         )}
       </AnimatePresence>
+
       <Cart cart={cart} onRemove={removeFromCart} onFinalize={finalizePurchase} />
       <Footer onContactClick={() => setShowContact(true)} />
 
-      <AnimatePresence>{showContact && <ContactModal onClose={() => setShowContact(false)} />}</AnimatePresence>
+      <AnimatePresence>
+        {showContact && <ContactModal onClose={() => setShowContact(false)} />}
+      </AnimatePresence>
+
       <AnimatePresence>{showSuccess && <SuccessMessage />}</AnimatePresence>
     </div>
   );

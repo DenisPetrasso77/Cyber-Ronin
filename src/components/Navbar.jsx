@@ -6,11 +6,14 @@ const Navbar = ({ cartCount }) => {
     <nav className="flex justify-between items-center px-10 py-5 bg-black/50 backdrop-blur-md shadow-lg sticky top-0 z-50">
       <h1
         className="text-3xl font-extrabold text-purple-400 drop-shadow-[0_0_10px_#a855f7] cursor-pointer hover:text-purple-300 transition-all"
+        style={{ fontFamily: 'Cyberpunk',
+              letterSpacing: '4px', // 👈 aumenta o reduce este valor
+         }}
         onClick={() =>
           document.getElementById("inicio")?.scrollIntoView({ behavior: "smooth" })
         }
       >
-        CyberRonin
+        Cyber Ronin
       </h1>
 
       <ul className="flex gap-8 text-lg">

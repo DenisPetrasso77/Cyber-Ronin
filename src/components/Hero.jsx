@@ -14,9 +14,18 @@ const Hero = () => {
         transition={{ duration: 1.2 }}
         className="text-6xl font-bold text-purple-300 drop-shadow-[0_0_25px_#a855f7] mb-6"
       >
-        Bienvenido a CyberRonin
+        Bienvenidos a{" "}
+        <span
+          style={{
+            fontFamily: "Cyberpunk",
+            letterSpacing: "4px",
+            fontSize: "1.2em", // 👈 ajustá este valor (1.2–1.5 suele ir bien)
+          }}
+          className="text-purple-400"
+        >
+          Cyber Ronin
+        </span>
       </motion.h2>
-
       <motion.p
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}

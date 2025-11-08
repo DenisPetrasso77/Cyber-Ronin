@@ -18,31 +18,43 @@ const Games = ({ juegos, onSelect }) => {
         Más Jugado
       </motion.h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-        {juegos.map((game, index) => (
-          <motion.div
-            key={index}
-            onClick={() => onSelect(game)}
-            initial={{ opacity: 0, y: 100 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: index * 0.2 }}
-            viewport={{ once: true }}
-            className="bg-black/60 border border-pink-500/30 rounded-2xl shadow-[0_0_20px_#ec4899] hover:shadow-[0_0_40px_#ec4899] transition-all duration-300 cursor-pointer"
-          >
-            <img
-              src={game.img}
-              alt={game.title}
-              className="rounded-t-2xl w-full h-64 object-cover transform hover:scale-105 transition-transform duration-500"
-            />
-            <div className="p-5">
-              <h3 className="text-2xl font-semibold text-pink-300">
-                {game.title}
-              </h3>
-              <p className="text-gray-300 mt-2 text-sm">{game.desc}</p>
-            </div>
-          </motion.div>
-        ))}
-      </div>
+      {/* Si no hay juegos */}
+      {(!juegos || juegos.length === 0) ? (
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          className="text-center text-gray-400 text-lg mt-10"
+        >
+          No se encontraron juegos. Intenta con otro término de búsqueda.
+        </motion.p>
+      ) : (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+          {juegos.map((game, index) => (
+            <motion.div
+              key={index}
+              onClick={() => onSelect(game)}
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              className="bg-black/60 border border-pink-500/30 rounded-2xl shadow-[0_0_20px_#ec4899] hover:shadow-[0_0_40px_#ec4899] transition-all duration-300 cursor-pointer hover:-translate-y-2"
+            >
+              <img
+                src={game.img}
+                alt={game.title}
+                className="rounded-t-2xl w-full h-64 object-cover transform hover:scale-105 transition-transform duration-500"
+              />
+              <div className="p-5">
+                <h3 className="text-2xl font-semibold text-pink-300 mb-2">
+                  {game.title}
+                </h3>
+                <p className="text-gray-300 text-sm">{game.desc}</p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      )}
     </section>
   );
 };
