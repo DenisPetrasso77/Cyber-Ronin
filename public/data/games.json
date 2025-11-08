@@ -1,0 +1,83 @@
+[
+  {
+    "img": "/images/elder-ring.jpg",
+    "title": "Elden Ring",
+    "desc": "El mundo abierto más desafiante de FromSoftware.",
+    "dev": "FromSoftware",
+    "genre": "Acción RPG",
+    "price": "$59.99",
+    "priceNumber": 59.99
+  },
+  {
+    "img": "/images/the-witcher-3.jpg",
+    "title": "The Witcher 3",
+    "desc": "Acompañá a Geralt en una historia épica.",
+    "dev": "CD Projekt Red",
+    "genre": "RPG",
+    "price": "$39.99",
+    "priceNumber": 59.99
+  },
+  {
+    "img": "/images/cyberpunk-2077.jpg",
+    "title": "Cyberpunk 2077",
+    "desc": "Viví la experiencia definitiva de Night City.",
+    "dev": "CD Projekt Red",
+    "genre": "Acción / Aventura",
+    "price": "$49.99",
+    "priceNumber": 59.99
+  },
+  {
+    "img": "/images/red-dead-2.jpg",
+    "title": "Red Dead Redemption",
+    "desc": "Viví el salvaje oeste en una historia inmersiva de lealtad, honor y redención.",
+    "dev": "Rockstar",
+    "genre": "Acción / Aventura",
+    "price": "$59.99",
+    "priceNumber": 59.99
+  },
+  {
+    "img": "/images/gta-v.jpg",
+    "title": "Grand Thef Auto V",
+    "desc": "Sumergite en Los Santos con acción, caos y libertad total en un mundo abierto legendario..",
+    "dev": "Rockstar",
+    "genre": "Acción / Aventura",
+    "price": "$39.99",
+    "priceNumber": 59.99
+  },
+  {
+    "img": "/images/ghost-of-tsushima.jpg",
+    "title": "Ghost Of Tsushima",
+    "desc": "Una tormenta se avecina, forja tu propio camino a través de esta aventura de acción en mundo abierto y descubre sus maravillas ocultas.",
+    "dev": "Sucker Punch Productions",
+    "genre": "Acción / Aventura",
+    "price": "$49.99",
+    "priceNumber": 59.99
+  },
+  {
+    "img": "/images/resident-evil-4-remake.jpg",
+    "title": "Resident Evil 4 Remake",
+    "desc": "Sobrevivir es solo el principio. Con una mecánica de juego modernizada, una historia reimaginada y unos gráficos espectacularmente detallados",
+    "dev": "CAPCOM",
+    "genre": "Acción / Aventura",
+    "price": "$59.99",
+    "priceNumber": 59.99
+  },
+  {
+    "img": "/images/tomb-raider.jpg",
+    "title": "Tomb Raider (2013)",
+    "desc": "Tomb Raider relata la historia del origen de Lara Croft y su transformación de una joven chica a una endurecida superviviente",
+    "dev": "Crystal Dynamics, Inc.",
+    "genre": "Acción / Aventura",
+    "price": "$39.99",
+    "priceNumber": 59.99
+  },
+  {
+    "img": "/images/silent-hill-2.jpg",
+    "title": "Silent Hill 2 Remake",
+    "desc": "«Me llamo... Maria», dice la mujer, sonriendo. Su rostro, su voz... Es igual que ella",
+    "dev": "Bloober Team SA",
+    "genre": "Acción / Aventura",
+    "price": "$49.99",
+    "priceNumber": 59.99
+  }
+]
