@@ -1,63 +1,36 @@
-🕹️ CyberRonin Games Store
+<h1 align="center">🕹️ CyberRonin Games Store</h1>
 
-Bienvenido a CyberRonin, una tienda de videojuegos moderna y futurista desarrollada con React, TailwindCSS y Framer Motion.
-El proyecto combina una estética cyberpunk con animaciones suaves, un sistema de búsqueda interactivo y componentes totalmente responsivos.
+<p align="center">
+  <img src="https://img.shields.io/badge/React-18.2.0-61DAFB?style=for-the-badge&logo=react&logoColor=white"/>
+  <img src="https://img.shields.io/badge/TailwindCSS-3.3-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white"/>
+  <img src="https://img.shields.io/badge/FramerMotion-10+-E4405F?style=for-the-badge&logo=framer&logoColor=white"/>
+</p>
 
-🚀 Características
+---
 
-🎮 Catálogo dinámico de juegos con imágenes, descripciones y animaciones.
+### 🌌 Bienvenido a **CyberRonin**
 
-🔍 Buscador en tiempo real para filtrar juegos por nombre.
+Una tienda de videojuegos moderna y futurista desarrollada con **React**, **TailwindCSS** y **Framer Motion**.  
+El proyecto combina una estética *cyberpunk* con animaciones suaves, un sistema de búsqueda interactivo y componentes totalmente responsivos.
 
-💫 Diseño moderno y responsivo, con efectos neón y gradientes oscuros.
+---
 
-⚙️ Componentes reutilizables, organizados por secciones (Home, Games, Footer, etc.).
+## 🚀 Características
 
-🧩 Animaciones fluidas gracias a Framer Motion.
+✨ **🎮 Catálogo dinámico** — Juegos con imágenes, descripciones y animaciones.  
+✨ **🔍 Buscador en tiempo real** — Filtra juegos por nombre al instante.  
+✨ **💫 Diseño responsivo** — Efectos *neón* y gradientes oscuros.  
+✨ **⚙️ Componentes modulares** — Secciones reutilizables (*Home*, *Games*, *Footer*...).  
+✨ **🧩 Animaciones suaves** — Impulsadas por *Framer Motion*.
 
-🛠️ Tecnologías utilizadas
+---
 
-⚛️ React
- — Librería principal para la interfaz.
+## 🛠️ Tecnologías utilizadas
 
-💨 TailwindCSS
- — Estilos rápidos, modernos y personalizables.
+| Tecnología | Descripción |
+|-------------|--------------|
+| ⚛️ **React** | Librería principal para la interfaz. |
+| 💨 **TailwindCSS** | Estilos rápidos, modernos y personalizables. |
+| 🎬 **Framer Motion** | Animaciones declarativas y fluidas. |
 
-🎬 Framer Motion
- — Animaciones declarativas y suaves.
-
-⚙️ Instalación y ejecución
-# Clonar el repositorio
-git clone https://github.com/tuusuario/cyberronin-games.git
-
-# Entrar al proyecto
-cd cyberronin-games
-
-# Instalar dependencias
-npm install
-
-# Iniciar el servidor de desarrollo
-npm run dev
-
-
-El proyecto estará disponible en
-👉 http://localhost:5173
-
-📁 Estructura básica
-src/
-├── components/
-│   ├── Navbar.jsx
-│   ├── SearchBar.jsx
-│   ├── Games.jsx
-│   ├── Footer.jsx
-│   └── ...
-├── assets/
-│   └── images/
-├── App.jsx
-└── main.jsx
-
-💜 Créditos
-
-Desarrollado con pasión por CyberRonin.
-
-“El futuro del gaming empieza en el código.” ⚡
+---
